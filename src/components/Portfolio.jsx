@@ -51,6 +51,17 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       sliderImages: [ "images/projects/studenttimes.png", "images/projects/studentcontact.png" ],
       // categories: [filters.BRAND],
     },
+    {
+      title: "Quiz App",
+      projectInfo: "This interactive Quiz App is designed to provide users with a dynamic and engaging way to test their knowledge across various topics. It features a sleek and minimalist design, with smooth animations for an enhanced user experience. The app is fully responsive, ensuring a consistent experience across all devices.",
+      technologies: "HTML, CSS, React.js, Framer Motion",
+      industry: "App",
+      date: "February, 2024",
+      url: { name: "Ameer's Quiz", link: "https://ameers-quiz.netlify.app/"},
+      thumbImage: "images/projects/welcomepage.png",
+      sliderImages: [ "images/projects/quizpage.png", "images/projects/quizend.png" ],
+      // categories: [filters.BRAND],
+    },
     
   ];
 
