@@ -21,9 +21,9 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               setIsNavModalClose(true);
             }}
           >
-            <span className="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
+            <span className="bg-dark-2 custom-rounded p-2 mb-lg-1 d-none d-lg-inline-block">
               <img
-                className="img-fluid rounded-pill d-block"
+                className="img-fluid custom-rounded d-block"
                 src="images/profile.jpeg"
                 title="I'm Ameer"
                 alt="profile"
