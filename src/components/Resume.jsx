@@ -5,36 +5,42 @@ const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
       yearRange: "2022 - Present",
-      title: "Honours Bachelor of Science",
+      title: "Bachelor of Science",
       place: "University of Toronto",
       desc: "Computer Science, Applied Statistics and Minor in Mathematics.",
     },
     {
       yearRange: "2024 - Present",
-      title: "How to Trade Forex",
-      place: "School of Pipsology",
-      desc: "An online course made for beginners to learn how to trade in the currency markets.",
+      title: "Microsoft AZ 900",
+      place: "Udemy",
+      desc: "An online course made for beginners to learn about Azure Fundamentals.",
     },
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2021 - 2021",
-      title: "Web Developer & Marketing Associate",
-      place: "Studenttimes Staffing Solutions",
-      desc: "Worked as a Website Developer at Studenttimes, responsible for providing instruction, designing and coding a full-stack web application for the company.",
+      yearRange: "2024 - 2024",
+      title: "Mobile App Developer Intern",
+      place: "GoKaddal Technologies",
+      desc: "Led the development of a dynamic mobile application using HTML, CSS, and JavaScript, optimizing app architecture and user interface to align with the latest industry standards and branding.",
     },
     {
-      yearRange: "2019 - 2021",
-      title: "Shopify Online Store",
-      place: "E-commerce",
-      desc: "Created and managed a Shopify online store specializing in the sale of workout equipment, leveraging digital marketing strategies to grow the customer base.",
+      yearRange: "2021 - 2021",
+      title: "Web Developer & Marketing Intern",
+      place: "Studenttimes Staffing Solutions",
+      desc: "Worked as a Website Developer at Studenttimes, responsible for providing instruction, designing and coding a full-stack web application for the company.",
     },
     {
       yearRange: "2023 - Present",
       title: "FBA Business Owner",
       place: "Amazon FBA",
       desc: "Operate an Amazon FBA business focusing on online arbitrage, sourcing a diverse range of products and managing the end-to-end process of inventory, marketing, and sales to ensure a seamless e-commerce operation.",
+    },
+    {
+      yearRange: "2019 - 2021",
+      title: "Shopify Online Store",
+      place: "E-commerce",
+      desc: "Created and managed a Shopify online store specializing in the sale of workout equipment, leveraging digital marketing strategies to grow the customer base.",
     },
   ];
 

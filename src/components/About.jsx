@@ -36,7 +36,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               I'm <span className="text-primary">Ameer Mohammad Khan.</span> 
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-            As a second-year computer science student, 
+            As a third-year computer science student, 
             I am passionate about applying technology to solve real-world problems, 
             with a focus on artificial intelligence and software engineering. 
             My academic and project work demonstrates a strong foundation in coding, 

@@ -10,7 +10,7 @@ const Services = ({ classicHeader, darkTheme }) => {
     },
     {
       name: "Coding Languages",
-      desc: "I am proficient in Python, HTML, CSS, JavaScript, R, LaTeX, C, React, and SCSS.",
+      desc: "I am proficient in Python, HTML, CSS, JavaScript, R, LaTeX, Node.js, React, and SCSS.",
       icon: "fas fa-desktop",
     },
     {
@@ -27,6 +27,11 @@ const Services = ({ classicHeader, darkTheme }) => {
       name: "Soft Skills",
       desc: "I possess qualities such as Self-learning, Effective Communication, Strong Work Ethic, Critical Thinking.",
       icon: "fa-solid fa-list",
+    },
+    {
+      name: "AWS Services",
+      desc: "I have sound working knowledge of S3, Lambda, and CloudFormation.",
+      icon: "fa-brands fa-aws",
     },
   ];
 
