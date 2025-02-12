@@ -10,10 +10,16 @@ const Resume = ({ classicHeader, darkTheme }) => {
       desc: "Computer Science, Applied Statistics and Minor in Mathematics.",
     },
     {
-      yearRange: "2024 - Present",
+      yearRange: "2025 - Present",
       title: "Microsoft AZ 900",
       place: "Udemy",
       desc: "An online course made for beginners to learn about Azure Fundamentals.",
+    },
+    {
+      yearRange: "2025 - Present",
+      title: "CompTIA Security+",
+      place: "Udemy",
+      desc: "A globally recognized certification that validates foundational skills in cybersecurity, risk management, and network security.",
     },
   ];
 

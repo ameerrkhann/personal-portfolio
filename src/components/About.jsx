@@ -36,17 +36,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               I'm <span className="text-primary">Ameer Mohammad Khan.</span> 
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-            As a third-year computer science student, 
-            I am passionate about applying technology to solve real-world problems, 
-            with a focus on artificial intelligence and software engineering. 
-            My academic and project work demonstrates a strong foundation in coding, 
-            problem-solving, and developing secure, scalable software solutions. 
+            I’m a third-year Computer Science student with a passion for Artificial Intelligence and Cybersecurity, constantly exploring how technology can be leveraged to build smarter, more secure systems. I primarily work with Python, but I’m expanding my expertise by learning Java to deepen my understanding of software development. My journey into tech started at 14 when I built my first e-commerce store, an experience that sparked my love for web development and problem-solving. Since then, I’ve been driven by curiosity and innovation, continuously refining my skills in AI, full-stack development, and security-focused solutions. 
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-            I dedicate my free time to learning about the latest trends in AI and software development, 
-            enhancing my skills in areas like web and full-stack development. 
-            Through continuous education and practical experience, I aim to innovate and 
-            contribute meaningfully to the tech industry, making a tangible impact with my work.
+            In my free time, I stay ahead of the curve by diving into the latest advancements in machine learning, cybersecurity, and software engineering. Whether through academic projects or personal exploration, my goal is to create meaningful, scalable, and secure tech solutions that make a real-world impact.
             </p>
           </div>
           {/* About me content end */}
