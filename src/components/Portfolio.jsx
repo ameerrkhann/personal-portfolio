@@ -70,7 +70,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "December, 2024",
       url: { name: "The Limo Company", link: "https://thelimocompany.ca/" },
       thumbImage: "images/projects/tlc.png",
-      sliderImages: [ "images/projects/tlc.png", "images/projects/tlc 2.png", "images/projects/tlc 3.png" ],
+      sliderImages: [ "images/projects/tlc 2.png", "images/projects/tlc 3.png" ],
       // categories: [filters.WEBSITE],
     },
     {
@@ -81,7 +81,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "February, 2025",
       url: { name: "ZB Tax Solutions", link: "https://zbtax.ca/" },
       thumbImage: "images/projects/zb.png",
-      sliderImages: [ "images/projects/zb.png", "images/projects/zb 2.png", "images/projects/zb 3.png" ],
+      sliderImages: [ "images/projects/zb 2.png", "images/projects/zb 3.png" ],
       // categories: [filters.WEBSITE],
     },
     
