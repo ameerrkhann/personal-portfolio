@@ -62,6 +62,28 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       sliderImages: [ "images/projects/quizpage.png", "images/projects/quizend.png" ],
       // categories: [filters.BRAND],
     },
+    {
+      title: "The Limo Company Website",
+      projectInfo: "A professional website designed for The Limo Company, a luxury transportation service. Built using WordPress with custom-coded sections, the site features a sleek and modern design, an intuitive booking system, and optimized performance for seamless user experience. The site is fully responsive, ensuring accessibility across all devices while maintaining high-speed performance and elegant aesthetics.",
+      technologies: "WordPress, HTML, CSS, JavaScript, PHP",
+      industry: "Website",
+      date: "December, 2024",
+      url: { name: "The Limo Company", link: "https://thelimocompany.ca/" },
+      thumbImage: "images/projects/tlc.png",
+      sliderImages: [ "images/projects/tlc.png", "images/projects/tlc 2.png", "images/projects/tlc 3.png" ],
+      // categories: [filters.WEBSITE],
+    },
+    {
+      title: "ZB Tax Solutions Website",
+      projectInfo: "This website was created for ZB Tax Solutions, a business offering accounting and bookkeeping services. Designed using WordPress, the site features a professional, user-friendly interface that highlights the company's services, provides easy navigation, and is optimized for both desktop and mobile devices. It also includes client-friendly contact forms and integrated service details for accessibility.",
+      technologies: "WordPress, Elementor, HTML, CSS",
+      industry: "Website",
+      date: "February, 2025",
+      url: { name: "ZB Tax Solutions", link: "https://zbtax.ca/" },
+      thumbImage: "images/projects/zb.png",
+      sliderImages: [ "images/projects/zb.png", "images/projects/zb 2.png", "images/projects/zb 3.png" ],
+      // categories: [filters.WEBSITE],
+    },
     
   ];
 
