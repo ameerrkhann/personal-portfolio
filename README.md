@@ -5,9 +5,8 @@ This is my **personal portfolio website**, designed to showcase my skills, exper
 
 ## 🛠️ Technologies Used
 - **HTML, CSS, JavaScript**
-- **React.js** (if applicable)
-- **WordPress** (if parts of the site were built using WP)
-- **Framer Motion** (for animations, if used)
+- **React.js** 
+- **Framer Motion** (for animations)
 - **Netlify** (for deployment)
 
 ## 🎨 Features
