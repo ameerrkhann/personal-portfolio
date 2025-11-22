@@ -36,11 +36,17 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               I'm <span className="text-primary">Ameer Mohammad Khan.</span> 
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-            I’m a third-year Computer Science student with a passion for Artificial Intelligence and Cybersecurity, constantly exploring how technology can be leveraged to build smarter, more secure systems. I primarily work with Python, but I’m expanding my expertise by learning Java to deepen my understanding of software development. My journey into tech started at 14 when I built my first e-commerce store, an experience that sparked my love for web development and problem-solving. Since then, I’ve been driven by curiosity and innovation, continuously refining my skills in AI, full-stack development, and security-focused solutions. 
+            I’m a fourth-year Computer Science student at the University of Toronto Mississauga with a strong passion for Artificial Intelligence and Cybersecurity. I focus on understanding emerging technologies, building secure systems, and developing practical solutions through hands-on projects. My background in Python and growing experience with Java have helped me strengthen my technical foundation while expanding into full-stack development, machine learning, and modern security practices.
             </p>
+
             <p className={darkTheme ? "text-white-50" : ""}>
-            In my free time, I stay ahead of the curve by diving into the latest advancements in machine learning, cybersecurity, and software engineering. Whether through academic projects or personal exploration, my goal is to create meaningful, scalable, and secure tech solutions that make a real-world impact.
+              Outside of academics, I manage a short-term rental property business, where I apply my problem-solving, leadership, and organizational skills. This entrepreneurial experience has taught me adaptability, time management, and how to operate effectively in fast-paced environments — skills that carry over into my work in tech.
             </p>
+
+            <p className={darkTheme ? "text-white-50" : ""}>
+              I’m constantly learning, whether through academic research, cybersecurity exploration, or personal AI projects. My goal is to build impactful, scalable, and secure technologies while continuing to grow in areas like threat analysis, secure software design, and intelligent system development.
+            </p>
+
           </div>
           {/* About me content end */}
           {/* about me personal detials start */}

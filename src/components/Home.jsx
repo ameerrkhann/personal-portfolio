@@ -59,13 +59,13 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   <Typewriter
                     options={{
                       strings: [
-                        "I'm a Content Creator.",
+                        "I'm a Short Term Rental Expert.",
                         "I'm a Web Developer.",
                         "I'm a Software Engineer.",
                         "I'm a Graphic Designer.",
                         "I'm an Entrepreneur.",
                         "I'm a Mentor.",
-                        "I'm a Freelancer.",
+                        "I'm a Project Manager.",
                         "I'm a Programmer.",
                       ],
                       autoStart: true,

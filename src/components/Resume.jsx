@@ -25,6 +25,18 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const experienceDetails = [
     {
+    yearRange: "2025 - Present",
+    title: "Customer Experience Associate",
+    place: "Scotiabank",
+    desc: "Assist clients with day-to-day banking needs while providing high-quality customer service, problem-solving support, and financial guidance to ensure smooth and secure banking experiences.",
+    },
+    {
+    yearRange: "2025 - Present",
+    title: "Short-Term Rental Property Manager",
+    place: "Self-Employed",
+    desc: "Manage short-term rental properties, overseeing operations including bookings, guest communication, pricing strategy, maintenance coordination, and ensuring a seamless hospitality experience.",
+    },
+    {
       yearRange: "2024 - 2024",
       title: "Mobile App Developer Intern",
       place: "GoKaddal Technologies",
@@ -37,7 +49,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
       desc: "Worked as a Website Developer at Studenttimes, responsible for providing instruction, designing and coding a full-stack web application for the company.",
     },
     {
-      yearRange: "2023 - Present",
+      yearRange: "2022 - 2024",
       title: "FBA Business Owner",
       place: "Amazon FBA",
       desc: "Operate an Amazon FBA business focusing on online arbitrage, sourcing a diverse range of products and managing the end-to-end process of inventory, marketing, and sales to ensure a seamless e-commerce operation.",

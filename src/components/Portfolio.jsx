@@ -84,6 +84,20 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       sliderImages: [ "images/projects/zb 2.png", "images/projects/zb 3.png" ],
       // categories: [filters.WEBSITE],
     },
+    {
+      title: "S&P 500 Stock Dashboard",
+      projectInfo: "A fully interactive, multi-page data analytics dashboard built using Plotly Dash. This project visualizes five years of S&P 500 stock data, allowing users to explore trends such as average closing prices, trading volume, and year-over-year performance. The dashboard features a modern dark UI, KPI cards, data filtering by year, and top-30 stock rankings for cleaner insights. Designed with a responsive layout and clean code architecture suitable for real-world data analysis applications.",
+      technologies: "Python, Plotly Dash, Pandas, Dash Bootstrap Components",
+      industry: "Data Analytics / Dashboard",
+      date: "November, 2025",
+      url: { name: "GitHub Repository", link: "https://github.com/ameerrkhann/sp500-stock-dashboard/tree/main" },
+      thumbImage: "images/projects/sp500-dashboard.png",
+      sliderImages: [
+        "images/projects/sp500-dashboard-2.png",
+        "images/projects/sp500-dashboard-3.png"
+      ],
+      // categories: [filters.DASHBOARD],
+},
     
   ];
 
