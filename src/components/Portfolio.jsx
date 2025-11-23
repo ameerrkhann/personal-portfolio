@@ -97,7 +97,25 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/sp500-dashboard-3.png"
       ],
       // categories: [filters.DASHBOARD],
-},
+    },
+    {
+      title: "Real-Time Weather Dashboard",
+      projectInfo:
+        "A fully interactive Power BI dashboard that visualizes real-time weather data using a live Weather API. The project features current conditions, a 7-day forecast, hourly trends, dynamic weather icons, and key metrics such as wind speed, humidity, visibility, UV index, pressure, and precipitation. Built with a modern dark UI theme, the dashboard integrates live API calls, advanced DAX measures, and optimized data modeling for seamless city-based filtering.",
+      technologies: "Power BI, DAX, Power Query (M), WeatherAPI, Data Modeling",
+      industry: "Data Visualization",
+      date: "November, 2025",
+      url: {
+        name: "Live Dashboard",
+        link: "https://utoronto-my.sharepoint.com/:u:/g/personal/ameer_khan_mail_utoronto_ca/EbxCs3D3QqdLuJKPUyjyXmIBhe3vv_Uxv6GKk48UN4RvVA?e=7woVbq"
+      },
+      thumbImage: "images/projects/dashboard.png",
+      sliderImages: [
+        // no extras
+      ],
+      // categories: [filters.DATA_VIZ],
+    }
+
     
   ];
 
