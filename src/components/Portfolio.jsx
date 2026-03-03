@@ -114,9 +114,24 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         // no extras
       ],
       // categories: [filters.DATA_VIZ],
+    },
+    {
+      title: "VulnScanner",
+      projectInfo:
+        "A modular Python network vulnerability scanner that combines TCP port discovery with NVD CVE lookups to produce risk-scored vulnerability reports. Features both a CLI and an interactive Streamlit web dashboard with live terminal feed, colour-coded results, and scan history.",
+      technologies: "Python, Nmap, NVD API v2, Streamlit",
+      industry: "Cybersecurity Tool",
+      date: "March, 2026",
+      url: {
+        name: "GitHub Repository",
+        link: "https://github.com/ameerrkhann/vulnscanner"
+      },
+      thumbImage: "images/projects/vul.jpeg",
+      sliderImages: [],
+      // categories: [filters.CYBERSECURITY],
     }
 
-    
+
   ];
 
   // initialize an Isotope object with configs
