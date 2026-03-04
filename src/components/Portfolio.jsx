@@ -163,7 +163,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       <section id="portfolio" className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}>
         <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
           {/* Heading */}
-          <div className="position-relative d-flex text-center mb-5">
+          <div className="position-relative d-flex text-center mb-5" data-aos="fade-up">
             <h2 className={"text-24  text-uppercase fw-600 w-100 mb-0 " + (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")}>Portfolio</h2>
             <p className={"text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " + (darkTheme ? "text-white" : "text-dark")}> My Work<span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" /></p>
           </div>
@@ -184,7 +184,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           <div className="portfolio popup-ajax-gallery">
             <div className="row portfolio-filter filter-container g-4">
               {projectsData.length > 0 && projectsData.map((project, index) => (
-                <div className={"col-sm-6 col-lg-4 filter-item "} key={index}> {/* Removed category classes */}
+                <div className={"col-sm-6 col-lg-4 filter-item "} key={index} data-aos="fade-up" data-aos-delay={(index % 3) * 100}> {/* Removed category classes */}
                   <div className="portfolio-box rounded">
                     <div className="portfolio-img rounded">
                       <img onLoad={() => { setimagesLoaded(imagesLoaded + 1); }} className="img-fluid d-block portfolio-image" src={project.thumbImage} alt="" />

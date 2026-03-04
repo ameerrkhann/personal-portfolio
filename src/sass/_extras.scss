@@ -471,3 +471,245 @@ input:-internal-autofill-selected {
 
 #styles-switcher.right{left:auto; right: -202px;}
 #styles-switcher.right .switcher-toggle{right: auto; left: -40px; border-radius: 4px 0px 0px 4px;}
+
+/* =================================== */
+/*  Timeline
+/* =================================== */
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+
+  /* Vertical line */
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: #dee2e6;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 22px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  z-index: 1;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content {
+  position: relative;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Small arrow pointing left toward the dot */
+  &::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #dee2e6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #fff;
+  }
+}
+
+/* Dark theme overrides */
+.bg-dark-1 {
+  .timeline::before {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .timeline-dot {
+    border-color: #212529;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  }
+
+  .timeline-content {
+    &:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    &::before {
+      border-right-color: #343a40;
+    }
+
+    &::after {
+      border-right-color: #343a40;
+    }
+  }
+}
+
+/* =================================== */
+/*  Skill Categories & Tech Badges
+/* =================================== */
+
+.skill-category-card {
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  min-height: 180px;
+
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.skill-category-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: rgba(180, 144, 126, 0.1);
+  font-size: 20px;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  margin: 4px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #495057;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+
+  i {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #B4907E;
+  }
+}
+
+.tech-badge-dark {
+  background: #1e2328;
+  border-color: #2d3339;
+  color: #ced4da;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-color: #B4907E;
+  }
+}
+
+/* Dark theme for category card */
+.bg-dark-2 {
+  .skill-category-card {
+    border-color: #2d3339;
+
+    &:hover {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .skill-category-icon {
+    background: rgba(180, 144, 126, 0.15);
+  }
+}
+
+/* =================================== */
+/*  Custom Cursor
+/* =================================== */
+
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  margin-top: -3px;
+  border-radius: 50%;
+  background: #B4907E;
+  transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease,
+    margin 0.25s ease, background-color 0.25s ease;
+}
+
+.cursor-dot--hover {
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
+  background: #fff;
+}
+
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  margin-top: -18px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(180, 144, 126, 0.5);
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.cursor-ring--hover {
+  border-color: rgba(180, 144, 126, 0.8);
+}
+
+/* Hide custom cursor on touch / small screens */
+@media (hover: none), (max-width: 991px) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+}
+
+/* Hide default cursor when custom cursor is active */
+@media (hover: hover) and (min-width: 992px) {
+  *,
+  a,
+  button {
+    cursor: none !important;
+  }
+}

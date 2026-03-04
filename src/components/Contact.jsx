@@ -59,7 +59,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div className="position-relative d-flex text-center mb-5" data-aos="fade-up">
           <h2
             className={
               "text-24  text-uppercase fw-600 w-100 mb-0 " +
@@ -82,7 +82,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
         {/* Heading end*/}
         <div className="row gy-5">
           {/* contact details */}
-          <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+          <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start" data-aos="fade-right" data-aos-delay="100">
           <h2
               className={
                 "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
@@ -179,7 +179,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
             </ul>
           </div>
           {/* contact form */}
-          <div className="col-md-8 col-xl-9 order-0 order-md-1">
+          <div className="col-md-8 col-xl-9 order-0 order-md-1" data-aos="fade-left" data-aos-delay="200">
             <h2
               className={
                 "mb-3 text-5 text-uppercase text-center text-md-start " +

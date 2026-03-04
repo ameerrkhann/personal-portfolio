@@ -45,7 +45,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
           <div className="container my-auto">
             <div className="row">
               <div className="col-12 text-center">
-                <p className="text-7 fw-500 text-white mb-2 mb-md-3">
+                <p className="text-7 fw-500 text-white mb-2 mb-md-3" data-aos="fade-down" data-aos-delay="200">
                   {decodedText.map((item, index) => (
                     <span
                       key={index}
@@ -55,7 +55,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                     </span>
                   ))}
                 </p>
-                <h2 className="text-13 fw-600 text-white mb-2 mb-md-3">
+                <h2 className="text-13 fw-600 text-white mb-2 mb-md-3" data-aos="fade-up" data-aos-delay="400">
                   <Typewriter
                     options={{
                       strings: [
@@ -73,9 +73,10 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                     }}
                   />
                 </h2>
-                <p className="text-4 text-light mb-4">
+                <p className="text-4 text-light mb-4" data-aos="fade-up" data-aos-delay="600">
                   Currently studying Computer Science at UofT.
                 </p>
+                <div data-aos="fade-up" data-aos-delay="800">
                 <Tooltip text="LinkedIn" placement="top">
                   <a
                     href="https://www.linkedin.com/in/ameermohammadkhan/"
@@ -86,6 +87,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                     <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </Tooltip>
+                </div>
               </div>
             </div>
           </div>

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -12,6 +14,7 @@ import ClassicHeader from "./components/ClassicHeader";
 import { commonConfig } from "./config/commonConfig";
 import PreLoader from "./components/Preloader";
 import { Tooltip } from "./components/Tooltip";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   const classicHeader = commonConfig.classicHeader;
@@ -27,6 +30,15 @@ function App() {
     return () => {
       clearTimeout(loadingTimeout);
     };
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
   }, []);
 
   useEffect(() => {
@@ -60,6 +72,7 @@ function App() {
 
   return (
     <>
+      <CustomCursor />
       <div style={{ position: "relative" }} className={classicHeader ? "" : "side-header"}>
         {isLoading && <PreLoader></PreLoader>}
         <div id="main-wrapper">

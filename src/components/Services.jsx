@@ -1,37 +1,68 @@
 import React from "react";
 
 const Services = ({ classicHeader, darkTheme }) => {
-  // services details
-  const services = [
+  const skillCategories = [
     {
-      name: "Graphic Design",
-      desc: "I specialize in creating logos and graphics with design software to create compelling brand identities for advertising.",
-      icon: "fas fa-palette",
+      name: "Languages",
+      icon: "fas fa-code",
+      techs: [
+        { name: "Python", icon: "devicon-python-plain colored" },
+        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+        { name: "HTML5", icon: "devicon-html5-plain colored" },
+        { name: "CSS3", icon: "devicon-css3-plain colored" },
+        { name: "R", icon: "devicon-r-plain colored" },
+        { name: "LaTeX", icon: "devicon-latex-original" },
+      ],
     },
     {
-      name: "Coding Languages",
-      desc: "I am proficient in Python, HTML, CSS, JavaScript, R, LaTeX, Node.js, React, and SCSS.",
-      icon: "fas fa-desktop",
+      name: "Frameworks & Libraries",
+      icon: "fas fa-layer-group",
+      techs: [
+        { name: "React", icon: "devicon-react-original colored" },
+        { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+        { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
+        { name: "Sass", icon: "devicon-sass-original colored" },
+      ],
     },
     {
-      name: "Web Design",
-      desc: "I can create personal portfolios, e-commerce websites, tailored to meet your business needs and enhance user experience.",
-      icon: "fas fa-pencil-ruler",
+      name: "Cloud Services",
+      icon: "fa-brands fa-aws",
+      techs: [
+        { name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark colored" },
+        { name: "S3", icon: "fas fa-database" },
+        { name: "Lambda", icon: "fas fa-bolt" },
+        { name: "CloudFormation", icon: "fas fa-cubes" },
+      ],
     },
     {
       name: "Developer Tools",
-      desc: "I've worked with PyCharm, Visual Studio Code, NetBeans, IntelliJ, Eclipse.",
-      icon: "fa-solid fa-screwdriver-wrench",
+      icon: "fas fa-screwdriver-wrench",
+      techs: [
+        { name: "VS Code", icon: "devicon-vscode-plain colored" },
+        { name: "PyCharm", icon: "devicon-pycharm-plain colored" },
+        { name: "IntelliJ", icon: "devicon-intellij-plain colored" },
+        { name: "Git", icon: "devicon-git-plain colored" },
+      ],
+    },
+    {
+      name: "Design",
+      icon: "fas fa-palette",
+      techs: [
+        { name: "Logo Design", icon: "fas fa-bezier-curve" },
+        { name: "UI/UX", icon: "fas fa-object-group" },
+        { name: "Branding", icon: "fas fa-paint-brush" },
+        { name: "Advertising", icon: "fas fa-bullhorn" },
+      ],
     },
     {
       name: "Soft Skills",
-      desc: "I possess qualities such as Self-learning, Effective Communication, Strong Work Ethic, Critical Thinking.",
-      icon: "fa-solid fa-list",
-    },
-    {
-      name: "AWS Services",
-      desc: "I have sound working knowledge of S3, Lambda, and CloudFormation.",
-      icon: "fa-brands fa-aws",
+      icon: "fas fa-user-graduate",
+      techs: [
+        { name: "Self-learning", icon: "fas fa-book-open" },
+        { name: "Communication", icon: "fas fa-comments" },
+        { name: "Work Ethic", icon: "fas fa-briefcase" },
+        { name: "Critical Thinking", icon: "fas fa-brain" },
+      ],
     },
   ];
 
@@ -42,7 +73,7 @@ const Services = ({ classicHeader, darkTheme }) => {
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div className="position-relative d-flex text-center mb-5" data-aos="fade-up">
           <h2
             className={
               "text-24  text-uppercase fw-600 w-100 mb-0 " +
@@ -66,29 +97,54 @@ const Services = ({ classicHeader, darkTheme }) => {
         <div className="row">
           <div className="col-lg-11 mx-auto">
             <div className="row">
-              {services.length > 0 &&
-                services.map((service, index) => (
-                  <div className="col-md-6" key={index}>
-                    <div className="featured-box style-3 mb-5">
+              {skillCategories.map((category, index) => (
+                <div
+                  className="col-md-6"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <div
+                    className={
+                      "skill-category-card rounded p-4 mb-4 " +
+                      (darkTheme ? "bg-dark-1" : "bg-white")
+                    }
+                  >
+                    <div className="d-flex align-items-center mb-3">
                       <div
                         className={
-                          "featured-box-icon text-primary  shadow-sm rounded " +
-                          (darkTheme ? "bg-dark-1" : "bg-white")
+                          "skill-category-icon rounded d-flex align-items-center justify-content-center me-3 " +
+                          (darkTheme ? "bg-dark-2" : "")
                         }
                       >
-                        <i className={service.icon} />
+                        <i className={category.icon + " text-primary"} />
                       </div>
-                      <h3 className={darkTheme ? "text-white" : ""}>
-                        {service.name}
-                      </h3>
-                      <p
-                        className={"mb-0 " + (darkTheme ? "text-white-50" : "")}
+                      <h3
+                        className={
+                          "mb-0 text-5 fw-600 " +
+                          (darkTheme ? "text-white" : "")
+                        }
                       >
-                        {service.desc}
-                      </p>
+                        {category.name}
+                      </h3>
+                    </div>
+                    <div className="d-flex flex-wrap">
+                      {category.techs.map((tech, i) => (
+                        <span
+                          key={i}
+                          className={
+                            "tech-badge " +
+                            (darkTheme ? "tech-badge-dark" : "")
+                          }
+                        >
+                          <i className={tech.icon} />
+                          {tech.name}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>
