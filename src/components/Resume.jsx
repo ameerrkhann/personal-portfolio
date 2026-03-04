@@ -25,6 +25,12 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const experienceDetails = [
     {
+    yearRange: "Jan 2025 - Present",
+    title: "Data Analyst I",
+    place: "Manulife",
+    desc: "Support data-driven decision making by analyzing financial datasets, building dashboards and reports, and collaborating with cross-functional teams to deliver actionable insights that improve operational efficiency.",
+    },
+    {
     yearRange: "2025 - Present",
     title: "Customer Experience Associate",
     place: "Scotiabank",
